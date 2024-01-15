@@ -1,5 +1,17 @@
 $(function(){
 
+
+// 검색창
+$(document).on('click',function(e){
+    if(!$(e.target).closest('.header_search').length){
+        $(".ant-input-affix").css("border-color","#f5f6f6");
+    }
+});
+
+$(".header_search").click(function(){
+    $(".ant-input-affix").css("border","2px solid #00D7B9");
+});
+
 // main > main1 > 슬라이드 이동------------------------------------------------------------------------------------
     let count=0;
     let pgnum=1;
