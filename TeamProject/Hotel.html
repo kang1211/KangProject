@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>DW_호텔</title>
 
 
 <!--jquery-->
@@ -15,202 +15,328 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
 
-<link rel="icon" href="./static/images/DW아이콘.ico">
-<script src="./static/javascript/IntervalTravel.js"></script>
+<link rel="icon" href="./static/images/main/DW아이콘.ico">
+
 
 
 <!-- header.css -->
 <link rel="stylesheet" href="./static/css/header.css">
+<!-- 호텔.css -->
+<link rel="stylesheet" href="./static/css/Hotel.css">
+<!-- 메인페이지.css -->
+<link rel="stylesheet" href="./static/css/main.css">
 <!-- footer.css -->
 <link rel="stylesheet" href="./static/css/footer.css">
-<!-- 국내여행.css -->
-<link rel="stylesheet" href="./static/css/IntervalTravel.css">
+<!-- 호텔.js -->
+<!-- <script src="./static/javascript/Hotel.js"></script> -->
+<!-- 메인페이지.js -->
+<script src="./static/javascript/main.js"></script>
 
 </head>
 <body>
-    <header> 
-        <div class="top1">
-            <div class="top1_left">
-                <div>
-                    <a href="./index.html">
-                        <img src="./static/images/main/DW투어.PNG" alt="메인아이콘" style="width:150px; height:40px;">
-                    </a>
-                </div>
-                <div class="header_search">
-                    <span class="ant-input-affix">
-                        <input type="text" class="ant-input" placeholder="검색어를 입력해 주세요." value>
-                        <span class="search_icon">
-                            <div>
-                                <img src="./static/images/main/icon_search_22.svg" alt="돋보기" width="20px" style="cursor:pointer">
-                            </div>
-                        </span>
+
+<header> 
+    <div class="top1">
+        <div class="top1_left">
+            <div>
+                <a href="./index.html">
+                    <img src="./static/images/main/DW투어.PNG" alt="메인아이콘" style="width:150px; height:40px;">
+                </a>
+            </div>
+            <div class="header_search">
+                <span class="ant-input-affix">
+                    <input type="text" class="ant-input" placeholder="검색어를 입력해 주세요." value>
+                    <span class="search_icon">
+                        <div>
+                            <img src="./static/images/main/icon_search_22.svg" alt="돋보기" width="20px" style="cursor:pointer">
+                        </div>
                     </span>
-                    <div class="hidden"></div>
-                </div>
-    
-                <div class="popu">
-                <div class="popularity">
-                    <span>인기검색어</span>
-                </div>
-                <div class="popularity_item">
-                        1. 아직 모르겠음
-                </div>
+                </span>
+                <div class="hidden"></div>
+            </div>
+
+            <div class="popu">
+            <div class="popularity">
+                <span>인기검색어</span>
+            </div>
+            <div class="popularity_item">
+                    1. 아직 모르겠음
+            </div>
+            </div>
+        </div>
+
+        <div class="top1_right">
+            <div class="top_icon">
+                <div width="26px"><i class="bi bi-bell"></i></div>
+                <span>알림</span>
+            </div>
+            <div class="top_icon">
+                <div><i class="bi bi-ticket-perforated"></i></div>
+                <span>웰컴쿠폰</span>
+            </div>
+            <div class="top_icon">
+                <div><i class="bi bi-person"></i></div>
+                <span>로그인</span>
+            </div>
+            <div class="top_icon">
+                <div><i class="bi bi-calendar2-check"></i></div>
+                <span>예약내용</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="top2">
+        <div class="top2_left" stlye="height:60px;background:red;">
+        <ul>
+            <div id="all_menu" class="menu" style="height:70px; display:flex;align-items:center;">
+                <span style="cursor:pointer;color:#00D7B9;display:flex; align-items:center; justify-content:center;"><div class="menu_logo" style="width: 22px; height: 22px; margin:0 10px;"><img src="./static/images/main/icon_menu_22.svg" alt="메뉴로고" width="24px" height="24px"></div>전체메뉴</span>
+                <div class="menu_carrier">
+                    <div class="all_menu_icon" style="margin-left:10px;"><img src="./static/images/main/전체메뉴_아이콘1.png" alt="all_menu_icon1"></div>
+                    <div class="all_menu_icon2" style="margin-left:20px;"><img src="./static/images/main/전체메뉴_아이콘2.png" alt="all_menu_icon2"></div>
+                    <div class="all_menu_detail" style="margin-left:30px;margin-top:20px;width:1140px;height:230px; background:rgb(138, 138, 138);display:flex;"></div>
                 </div>
             </div>
+            <li class="menu"><a href="./null.html">해외여행</a></li>
+            <li class="menu"><a href="./InternalTravel.html">국내여행</a></li>
+            <li class="menu"><a href="./null.html">항공</a></li>
+            <li class="menu"><a href="./Hotel.html">호텔</a></li>
+            <li class="menu"><a href="./null.html">투어/패스</a></li>
+        </ul>
+        </div>
+
     
-            <div class="top1_right">
-                <div class="top_icon">
-                    <div width="26px"><i class="bi bi-bell"></i></div>
-                    <span>알림</span>
+
+        <div class="top2_right">
+            <ul>
+                <div><a href="./null.html"  style="text-decoration:none; font-family: 'Noto Sans KR', sans-serif;">기획전</a></div>
+                <div><a href="./null.html" style="text-decoration:none; font-family: 'Noto Sans KR', sans-serif;">이벤트</a></div>
+                <div><a href="./null.html" style="text-decoration:none; font-family: 'Noto Sans KR', sans-serif;">고객센터</a></div>
+            </ul>
+        </div>
+    
+</div>
+</header>
+
+<div class="main1">
+    <div class="main1_container">
+    <div class="slideList">
+
+            <div class="list1">
+            <div class="sl_img">
+                <div class="slide_img_바탕색" style="background-color:rgb(184, 169, 0);">
+                    <div class="slide_image_text">
+                        <div class="slide_image_text1">
+                        <div><p class="sit" style="color:rgb(255, 255, 255); font-size:30px;">이번 새해 제주도 에서 보내는거 어떄요?</p></div>
+                        <div><p class="sit" style="color:rgb(255, 76, 70); font-size:30px;">지금 바로 무조건 출발!</p></div>
+                        </div>
+                        <div class="slide_image_text2" style="margin:30px 0;">
+                            <div><p class="sit" style="color:rgb(255, 76, 70); font-size:18px;">최저가로 오름에서 인생네컷찍고 인스타 올리자 </p></div>
+                            <div><p class="sit" style="color:rgb(255, 255, 255); font-size:18px;">제주도가서 갈치조림 어떄?</p></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="top_icon">
-                    <div><i class="bi bi-ticket-perforated"></i></div>
-                    <span>웰컴쿠폰</span>
+                <div class="slide_img_사진" style="background-image:url(./static/images/hotel/slide_hotel1.avif)"></div>
+            </div>
+            </div>
+
+            <div class="list2">
+            <div class="sl_img">
+                <div class="slide_img_바탕색" style="background-color:rgb(102, 55, 0);">
+                    <div class="slide_image_text">
+                        <div class="slide_image_text1">
+                        <div><p class="sit" style="color:rgb(255, 255, 255); font-size:30px;">겨울하면 눈 눈하면 스키장 아이가!</p></div>
+                        <div><p class="sit" style="color:rgb(255, 76, 70); font-size:30px;">가실 준비 되셨습니까!</p></div>
+                        </div>
+                        <div class="slide_image_text2" style="margin:30px 0;">
+                            <div><p class="sit" style="color:rgb(255, 76, 70); font-size:18px;">연인과 함께 가족과 함께 친구와 함께</p></div>
+                            <div><p class="sit" style="color:rgb(255, 255, 255); font-size:18px;">지금 당장 출발하세요</p></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="top_icon">
-                    <div><i class="bi bi-person"></i></div>
-                    <span>로그인</span>
+                <div class="slide_img_사진" style="background-image:url(./static/images/hotel/slide_hotel2.avif);"></div>
+            </div>
+            </div>
+
+            <div class="list3">
+            <div class="sl_img">
+                <div class="slide_img_바탕색" style="background-color:rgb(144, 184, 255);">
+                    <div class="slide_image_text">
+                        <div class="slide_image_text1">
+                        <div><p class="sit" style="color:rgb(255, 255, 255); font-size:30px;">집에서 보일러 말고 뜨끈한 온천탕 어떄요?</p></div>
+                        <div><p class="sit" style="color:rgb(255, 76, 70); font-size:30px;">온천하면 일본 ? 풉 , 충남 덕산으로 떠나세요</p></div>
+                        </div>
+                        <div class="slide_image_text2" style="margin:30px 0;">
+                            <div><p class="sit" style="color:rgb(255, 76, 70); font-size:18px;">자연의 공기를 들이마시며</p></div>
+                            <div><p class="sit" style="color:rgb(255, 255, 255); font-size:18px;">녹차한잔까지 .. 크~</p></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="top_icon">
-                    <div><i class="bi bi-calendar2-check"></i></div>
-                    <span>예약내용</span>
+                <div class="slide_img_사진" style="background-image:url(./static/images/hotel/slide_hotel3.avif);"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="slide_bt">
+            <div class="slide_bt_left" style="cursor:pointer;"><i class="bi bi-arrow-left-circle-fill" style="color:rgb(0, 78, 0); font-size:30px;"></i></div>
+            <div class="slide_bt_right" style="margin-left:10px; cursor:pointer;"><i class="bi bi-arrow-right-circle-fill" style="color:rgb(0, 78, 0); font-size:30px;"></i></div>
+            <div style="margin-left:60px;"><p style="font-size:20px;" id="slide_page_num"></p></div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <div id="category">
+        <div id="ImgNtext" class="kids" style="background-image: url(./static/images/hotel/insert1.jpg);">
+            <div class="text-box">
+                <p class="text">아이들과</p>
+            </div>
+        </div>
+        <div id="ImgNtext" class="parent" style="background-image: url(./static/images/hotel/insert2.jpg);">
+            <div class="text-box">
+                <p class="text textParent">부모님과</p>
+            </div>
+        </div>
+        <div id="ImgNtext" class="lover" style="background-image: url(./static/images/hotel/insert3.jpg);">
+            <div class="text-box">
+                <p class="text">연인과</p>
+            </div>
+        </div>
+        <div id="ImgNtext" class="solo" style="background-image: url(./static/images/hotel/insert4.jpeg);">
+            <div class="text-box">
+                <p class="text">나 자신과</p>
+            </div>
+        </div>     
+    </div>   
+    
+    <div id="now">
+        <div class="nowImg">
+            <div class="item"><img src="./static/images/hotel/증평군1.jpg" alt="증평군1"></div>
+            <div class="item"><img src="./static/images/hotel/증평군2.jpg" alt="증평군2"></div>
+            <div class="item"><img src="./static/images/hotel/증평군3.jpg" alt="증평군3"></div>
+            <div class="item"><img src="./static/images/hotel/증평군4.jpg" alt="증평군4"></div>
+            <div class="item"><img src="./static/images/hotel/증평군5.jpg" alt="증평군5"></div>
+        </div>
+        <div class="nowText">
+            <h2>인기 급상승 여행지</h2>
+            <p>겨울에 힐링하기 좋은 도시 충청북도 증평에 가다.</p>
+            <div>#좌구산자연휴양림 #증평민속체험박물관</div>
+        </div>
+    </div>
+
+    <div id="kind">
+        <div class="main2">
+            <div class="main2_container">
+                <h1 style="position:absolute; top:0; left:0;">놓치지 말아야 할 제주여행</h1>
+                <div class="main2_item">
+                    <img src="./static/images/hotel/main2_item1.avif" alt="main2_item1">
+                    <div style="margin:0 10px; position:relative; height:200px;">
+                        <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >제주도</p>
+                        <h1 style="font-size:25px; word-break:keep-all; margin:10px 0;">그랜드 하얏트 제주 2박 3일</h1>
+                        <p style="font-size:15px; word-break:keep-all; color:gray;">#제주호캉스 #관광지쿠폰 #렌트카할인</p>
+                        <div style="position:absolute; right:0; bottom:0; display:flex; align-items:center;"><p style="font-size:30px; margin-right:10px; font-weight:bold;">529,900</p><p>원~</p></div>
+                    </div>
+                </div>
+                <div class="main2_item">
+                    <img src="./static/images/hotel/slide_hotel2.avif" alt="main2_item1">
+                    <div style="margin:0 10px; position:relative; height:200px;">
+                        <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >제주도</p>
+                        <h1 style="font-size:25px; word-break:keep-all; margin:10px 0;">제주 롯데 호텔 1박 2일</h1>
+                        <p style="font-size:15px; word-break:keep-all; color:gray;">ㅇㅇ</p>
+                        <div style="position:absolute; right:0; bottom:0; display:flex; align-items:center;"><p style="font-size:30px; margin-right:10px; font-weight:bold;">379,900</p><p>원~</p></div>
+                    </div>
+                </div>
+                <div class="main2_item">
+                    <img src="./static/images/hotel/main2_item3.avif" alt="main2_item1">
+                    <div style="margin:0 10px; position:relative; height:200px;">
+                        <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >제주도</p>
+                        <h1 style="font-size:25px; word-break:keep-all; margin:10px 0;">제주 신라 호텔 2박 3일</h1>
+                        <p style="font-size:15px; word-break:keep-all; color:gray;">ㅇㅇ</p>
+                        <div style="position:absolute; right:0; bottom:0; display:flex; align-items:center;"><p style="font-size:30px; margin-right:10px; font-weight:bold;">579,900</p><p>원~</p></div>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <div class="top2">
-            <div class="top2_left">
-            <ul>
-                
-                <div class="menu"><span style="cursor:pointer;color:#00D7B9; display:flex; align-items:center; justify-content:center;"><div class="menu_logo" style="width: 22px; height: 22px; margin:0 10px;"><img src="./static/images/main/icon_menu_22.svg" alt="메뉴로고" width="24px" height="24px"></div>전체메뉴</span></div>
-                <li class="menu"><a href="./null.html">해외여행</a></li>
-                <li class="menu"><a href="./InternalTravel.html">국내여행</a></li>
-                <li class="menu"><a href="./null.html">항공</a></li>
-                <li class="menu"><a href="./Hotel.html">호텔</a></li>
-                <li class="menu"><a href="./null.html">투어/패스</a></li>
+        <div class="main2">
+            <div class="main2_container">
+                <h1 style="position:absolute; top:0; left:0;">모두의 추천 상품</h1>
+                <div class="main2_item">
+                    <img src="./static/images/hotel/강원도하이원.avif" alt="main2_item1">
+                    <div style="margin:0 10px; position:relative; height:200px;">
+                        <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >강원도</p>
+                        <h1 style="font-size:25px; word-break:keep-all; margin:10px 0;">[연합상품][스키/보드] 강원도로 떠나서 즐기는 1박2일 겨울 스포츠</h1>
+                        <p style="font-size:15px; word-break:keep-all; color:gray;">#스키여행 #보드여행 #강원도여행 #재미보장</p>
+                        <div style="position:absolute; right:0; bottom:0; display:flex; align-items:center;"><p style="font-size:30px; margin-right:10px; font-weight:bold;">269,000</p><p>원~</p></div>
+                    </div>
+                </div>
+                <div class="main2_item">
+                    <img src="./static/images/hotel/북촌한옥.avif" alt="main2_item1">
+                    <div style="margin:0 10px; position:relative; height:200px;">
+                        <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >서울</p>
+                        <h1 style="font-size:25px; word-break:keep-all; margin:10px 0;">옛 사람들의 지혜, 한옥의 잊지 못할 기억 2박3일</h1>
+                        <p style="font-size:15px; word-break:keep-all; color:gray;">#대중교통이용 #걸어서 서울 곳곳  #한정식 3회 제공 #패키지</p>
+                        <div style="position:absolute; right:0; bottom:0; display:flex; align-items:center;"><p style="font-size:30px; margin-right:10px; font-weight:bold;">409,900</p><p>원~</p></div>
+                    </div>
+                </div>
+                <div class="main2_item">
+                    <img src="./static/images/hotel/여수.avif" alt="main2_item1">
+                    <div style="margin:0 10px; position:relative; height:200px;">
+                        <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >전남</p>
+                        <h1 style="font-size:25px; word-break:keep-all; margin:10px 0;">[여수밤바다] 여수 풀코스 3일</h1>
+                        <p style="font-size:15px; word-break:keep-all; color:gray;">#노팁 #노옵션 #야시장 #회 #여객선패키지 #전일정특식포함</p>
+                        <div style="position:absolute; right:0; bottom:0; display:flex; align-items:center;"><p style="font-size:30px; margin-right:10px; font-weight:bold;">459,000</p><p>원~</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</main>
+
+<footer>
+    <div class="inr">
+        <div class="service_info" style="display:flex; align-items:center; justify-content:center;">
+            <div style="width:1000px;">
+            <ul style="display:flex; justify-content:space-around;">
+                <li><a href="./null.html">회사소개</a></li>
+                <p> | </p>
+                <li><a href="./null.html" style="font-weight:bold;">개인정보처리방침</a></li>
+                <p> | </p>
+                <li><a href="./null.html">여행약관</a></li>
+                <p> | </p>
+                <li><a href="./null.html">이용약관</a></li>
+                <p> | </p>
+                <li><a href="./null.html">해외여행자보험</a></li>
+                <p> | </p>
+                <li><a href="./null.html">티켓판매안내</a></li>
+                <p> | </p>
+                <li><a href="./null.html">공지사항</a></li>
+                <p> | </p>
+                <li><a href="./null.html">고객센터</a></li>
             </ul>
             </div>
-            <div class="top2_right">
-                <ul>
-                    <div><a href="./null.html"  style="text-decoration:none; color:black;    font-family: 'Noto Sans KR', sans-serif;">기획전</a></div>
-                    <div><a href="./null.html" style="text-decoration:none; color:black;    font-family: 'Noto Sans KR', sans-serif;">이벤트</a></div>
-                    <div><a href="./null.html" style="text-decoration:none; color:black;    font-family: 'Noto Sans KR', sans-serif;">고객센터</a></div>
-                </ul>
-            </div>
         </div>
-    </header>
-
-    <main>
-        <div class="slider-container">
-            <!-- 이미지 슬라이더 -->
-            <div class="slider">
-              <!-- 각 이미지 슬라이드 -->
-              <div class="slide">
-                <img src="./static/images/main/slied_image1.avif" alt="Slide 1">
-              </div>
-          
-              <div class="slide">
-                <img src="./static/images/main/slied_image2.avif" alt="Slide 2">
-              </div>
-          
-              <div class="slide">
-                <img src="./static/images/main/slied_image3.avif" alt="Slide 3">
-              </div>
-
-            </div>
-            <!-- 이전/다음 버튼 -->
-            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
-        </div>
-
-        <div id="category">
-            <div id="ImgNtext" class="kids" style="background-image: url(./static/images/insert1.png);">
-                <div class="text-box">
-                    <p class="text">아이들과</p>
-                </div>
-            </div>
-            <div id="ImgNtext" class="parent" style="background-image: url(./static/images/insert2.jpg);">
-                <div class="text-box">
-                    <p class="text textParent">부모님과</p>
-                </div>
-            </div>
-            <div id="ImgNtext" class="lover" style="background-image: url(./static/images/insert3.jpg);">
-                <div class="text-box">
-                    <p class="text">연인과</p>
-                </div>
-            </div>
-            <div id="ImgNtext" class="solo" style="background-image: url(./static/images/insert4.jpeg);">
-                <div class="text-box">
-                    <p class="text">나 자신과</p>
-                </div>
-            </div>     
-        </div>   
-        
-        <div id="now">
-            <div class="nowImg">
-                <div class="item"><img src="./static/images/증평군1.jpg" alt="증평군1"></div>
-                <div class="item"><img src="./static/images/증평군2.jpg" alt="증평군2"></div>
-                <div class="item"><img src="./static/images/증평군3.jpg" alt="증평군3"></div>
-                <div class="item"><img src="./static/images/증평군4.jpg" alt="증평군4"></div>
-                <div class="item"><img src="./static/images/증평군5.jpg" alt="증평군5"></div>
-            </div>
-            <div class="nowText">
-                <b>인기 여행지</b>
-            </div>
-        </div>
-
-        <div id="kind">
-            <div class="kindInsert history">역사</div>
-            <div class="kindInsert snow">눈</div>
-            <div class="kindInsert glamping">글램핑</div>
-        </div>    
-    </main>
-    <footer>
-        <div class="inr">
-            <div class="service_info" style="display:flex; align-items:center; justify-content:center;">
-                <div style="width:1000px;">
-                <ul style="display:flex; justify-content:space-around;">
-                    <li><a href="./null.html">회사소개</a></li>
-                    <p> | </p>
-                    <li><a href="./null.html" style="font-weight:bold;">개인정보처리방침</a></li>
-                    <p> | </p>
-                    <li><a href="./null.html">여행약관</a></li>
-                    <p> | </p>
-                    <li><a href="./null.html">이용약관</a></li>
-                    <p> | </p>
-                    <li><a href="./null.html">해외여행자보험</a></li>
-                    <p> | </p>
-                    <li><a href="./null.html">티켓판매안내</a></li>
-                    <p> | </p>
-                    <li><a href="./null.html">공지사항</a></li>
-                    <p> | </p>
-                    <li><a href="./null.html">고객센터</a></li>
-                </ul>
-                </div>
-            </div>
-            <div class="company_info">
-                <div style="margin-top:10px;">
-                <div class="c_info" style="display:flex; width:1000px; margin-top:10px;">
-                    <p>(주)DW투어</p><p> | </p><p>대표 : 중앙로</p><p> | </p><p>주소 : 대전 중구 중앙로121번길 20 2,3 2층<p><p> | </p><p>관광사업자 등록번호 : 제1118-1151호</p><p> | </p><p>호스팅업체 : (주)DW투어네트워크</p>
-                </div>
-                
-                <div class="c_info" style="display:flex; width:1000px; margin-top:10px;">
-                    <p>개인정보 보호 책임자 : 여행사</p><p> | </p><p>팩스02-000-0000</p><p> | </p><p>영업보증보험 : 22억 3천만원 가입<p> | <p>관광사업자 등록번호 : 제1118-1151호</p><p> | </p><p>호스팅업체 : (주)DW투어네트워크</p>
-                </div>
-                
-                <div style="">
-                    <div class="c_info" style="width:1000px; margin-top:10px;">
-                        <p>부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.</p>
-                    </div>
-                    <div class="c_info" style="width:1000px; margin-top:10px;">
-                        <p>DW투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을 지지 않습니다.</p>
-                    </div>
-                </div>
-                </div>            
+        <div class="company_info">
+            <div style="margin-top:10px;">
+            <div class="c_info" style="display:flex; width:1000px; margin-top:10px;">
+                <p>(주)DW투어</p><p> | </p><p>대표 : 중앙로</p><p> | </p><p>주소 : 대전 중구 중앙로121번길 20 2,3 2층<p><p> | </p><p>관광사업자 등록번호 : 제1118-1151호</p><p> | </p><p>호스팅업체 : (주)DW투어네트워크</p>
             </div>
             
+            <div class="c_info" style="display:flex; width:1000px; margin-top:10px;">
+                <p>개인정보 보호 책임자 : 여행사</p><p> | </p><p>팩스02-000-0000</p><p> | </p><p>영업보증보험 : 22억 3천만원 가입<p> | <p>관광사업자 등록번호 : 제1118-1151호</p><p> | </p><p>호스팅업체 : (주)DW투어네트워크</p>
+            </div>
+            
+            <div style="">
+                <div class="c_info" style="width:1000px; margin-top:10px;">
+                    <p>부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.</p>
+                </div>
+                <div class="c_info" style="width:1000px; margin-top:10px;">
+                    <p>DW투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을 지지 않습니다.</p>
+                </div>
+            </div>
+            </div>            
         </div>
-        <div class="certification_mark"></div>
-    </footer>
+        
+    </div>
+    <div class="certification_mark"></div>
+</footer>
 </body>
 </html>

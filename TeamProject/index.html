@@ -19,7 +19,7 @@
 
 <!-- header.css -->
 <link rel="stylesheet" href="./static/css/header.css">
-<!-- main.css -->
+<!-- 메인페이지.css -->
 <link rel="stylesheet" href="./static/css/main.css">
 <!-- footer.css -->
 <link rel="stylesheet" href="./static/css/footer.css">
@@ -82,8 +82,8 @@
     <div class="top2">
         <div class="top2_left" stlye="height:60px;background:red;">
         <ul>
-            <div id="all_menu" class="menu" stlye="padding:200px;">
-                <span style="cursor:pointer;color:#00D7B9; display:flex; align-items:center; justify-content:center;"><div class="menu_logo" style="width: 22px; height: 22px; margin:0 10px;"><img src="./static/images/main/icon_menu_22.svg" alt="메뉴로고" width="24px" height="24px"></div>전체메뉴</span>
+            <div id="all_menu" class="menu" style="height:70px; display:flex;align-items:center;">
+                <span style="cursor:pointer;color:#00D7B9;display:flex; align-items:center; justify-content:center;"><div class="menu_logo" style="width: 22px; height: 22px; margin:0 10px;"><img src="./static/images/main/icon_menu_22.svg" alt="메뉴로고" width="24px" height="24px"></div>전체메뉴</span>
                 <div class="menu_carrier">
                     <div class="all_menu_icon" style="margin-left:10px;"><img src="./static/images/main/전체메뉴_아이콘1.png" alt="all_menu_icon1"></div>
                     <div class="all_menu_icon2" style="margin-left:20px;"><img src="./static/images/main/전체메뉴_아이콘2.png" alt="all_menu_icon2"></div>
@@ -114,7 +114,7 @@
 <main>
     <div class="main1">
         <div class="main1_container">
-        <div class="slideList">
+            <div class="slideList">
 
                 <div class="list1">
                 <div class="sl_img">
@@ -205,7 +205,6 @@
                         <div class="slide_img_사진" style="background-image:url(./static/images/main/slied_image5.avif);"></div>
                     </div>
                     </div>
-            
             </div>
 
             <div class="slide_bt">
@@ -248,6 +247,7 @@
             </div>
         </div>
     </div>
+
     <div class="main5">
         <div class="main5_container">
             <h1 style="position:absolute; top:100px; left:0; font-family: 'seolleimcool-SemiBold';">우리나라 구석구석</h1>
@@ -293,21 +293,21 @@
             </div>
         </div>
     </div>
+
     <div class="main3">
-        <div class="main3_back" style="position:absolute; width:3000px; height:300px; animation:back 20s infinite; animation-direction:alternate"></div>
-        <div class="advertisement1" style="width:1400px; height:150px;background:#8d3ec5; display:flex; position:relative;cursor:pointer;">
-            <img src="./static/images/main/청룡.png" alt="청룡" style="width:100px; position:absolute; left:250px; top:20px;">
-            <div style = "position:absolute;width:600px; left:420px;margin-top:20px;">
+        <div class="main3_back" style="position:absolute; width:7000px; height:100%; animation:back 40s infinite; animation-direction:alternate"></div>
+        <div class="advertisement1" style="width:1400px; height:150px; background:#3747d6; display:flex; position:relative; cursor:pointer; align-items:center;border-radius:50%;">   
+            <img src="./static/images/main/청룡.png" alt="청룡" style="width:100px; position:absolute; left:400px; top:20px;">
+            <div style = "position:absolute; left:550px; width:600px;">
                 <div style="display:flex; align-items:center;">
                     <p style="color:white; font-family:iceJaram-Rg; font-size:50px; margin-right:50px;">새해맞이 이벤트!!</p>
                     <img src="./static/images/main/광고.PNG" alt="광고아이콘" style="width:200px; height:50px;">
                 </div>
-                <div>
-                    <p style="color:white;font-size:20px;">sns에 공유하고 다양한 혜택을 챙겨보자</p>
-                </div>
+                <div><p style="color:white;font-size:20px;">sns에 공유하고 다양한 혜택을 챙겨보자</p></div>
             </div>
         </div>
     </div>
+    
     <div class="main4">
         <div class="main4_container">
         <h1 style="position:absolute; top:0; left:0; font-family: 'seolleimcool-SemiBold';">여행 LIVE</h1>
@@ -366,6 +366,7 @@
     </div>
     <div class="certification_mark"></div>
 </footer>
+
 <div id="overlay">
     <div style="border-radius: 10px; display:flex; position:relative; border:5px solid white;">
     <div id="popup" style="background-image:url(./static/images/main/광고배너.avif);"></div>
@@ -374,5 +375,6 @@
     <span id="close-btn" onclick="closePopup()"style="border-radius:10%;background-color:white; width:30px; height:30px; display:flex;justify-content:center; align-items:center;"><i class="bi bi-x-square-fill" style="font-size:25px;color:#000000;margin-bottom:3px;"></i></span>
     </div>
 </div>
+
 </body>
 </html>

@@ -140,6 +140,7 @@ header{
 }
 #all_menu:hover .menu_carrier, .menu_carrier:hover{
     display:block;
+    transition-duration:5s;
 }
 .menu{
     list-style-type:none;

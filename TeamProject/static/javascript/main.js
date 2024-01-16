@@ -63,11 +63,11 @@ $(".header_search").click(function(){
 });
 
 function openPopup() {
-    var overlay = document.getElementById('overlay');
-    overlay.style.display = 'flex';
-  }
+var overlay = document.getElementById('overlay');
+overlay.style.display = 'flex';
+}
 
-  function closePopup() {
-    var overlay = document.getElementById('overlay');
-    overlay.style.display = 'none';
-  }
+function closePopup() {
+var overlay = document.getElementById('overlay');
+overlay.style.display = 'none';
+}

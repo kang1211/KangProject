@@ -1,5 +1,5 @@
 let slideIndex = 1;
-
+$(function(){
   function showSlides() {
     let slides = document.querySelector('.slider');
     let slidesArray = document.querySelectorAll('.slide');
@@ -27,5 +27,5 @@ let slideIndex = 1;
 
   // 초기 슬라이드 표시
   showSlides();
-
+})
 /*-------------------------------------------------------------------------------------- */
