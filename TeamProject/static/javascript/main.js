@@ -58,5 +58,16 @@ $(".header_search").click(function(){
 
     $(".slide_bt_right").on("click", nextSlide); // 페이지 오른쪽 버튼
     $(".slide_bt_left").on("click", prevSlide); // 페이지 왼쪽 버튼
+    openPopup();
+
 });
 
+function openPopup() {
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'flex';
+  }
+
+  function closePopup() {
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
+  }

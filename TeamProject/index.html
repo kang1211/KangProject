@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW_TOUR</title>
+
+
+<!--jquery-->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<!--bootstrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<!--googleFont-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+<link rel="icon" href="./static/images/main/DW아이콘.ico">
+
+<!-- header.css -->
+<link rel="stylesheet" href="./static/css/header.css">
+<!-- main.css -->
+<link rel="stylesheet" href="./static/css/main.css">
+<!-- footer.css -->
+<link rel="stylesheet" href="./static/css/footer.css">
+
+<!-- main.js -->
+<script src="./static/javascript/main.js"></script>
+
+</head>
+<body>
+<header> 
+    <div class="top1">
+        <div class="top1_left">
+            <div>
+                <a href="./index.html">
+                    <img src="./static/images/main/DW투어.PNG" alt="메인아이콘" style="width:150px; height:40px;">
+                </a>
+            </div>
+            <div class="header_search">
+                <span class="ant-input-affix">
+                    <input type="text" class="ant-input" placeholder="검색어를 입력해 주세요." value>
+                    <span class="search_icon">
+                        <div>
+                            <img src="./static/images/main/icon_search_22.svg" alt="돋보기" width="20px" style="cursor:pointer">
+                        </div>
+                    </span>
+                </span>
+                <div class="hidden"></div>
+            </div>
+
+            <div class="popu">
+            <div class="popularity">
+                <span>인기검색어</span>
+            </div>
+            <div class="popularity_item">
+                    1. 아직 모르겠음
+            </div>
+            </div>
+        </div>
+
+        <div class="top1_right">
+            <div class="top_icon">
+                <div width="26px"><i class="bi bi-bell"></i></div>
+                <span>알림</span>
+            </div>
+            <div class="top_icon">
+                <div><i class="bi bi-ticket-perforated"></i></div>
+                <span>웰컴쿠폰</span>
+            </div>
+            <div class="top_icon">
+                <div><i class="bi bi-person"></i></div>
+                <span>로그인</span>
+            </div>
+            <div class="top_icon">
+                <div><i class="bi bi-calendar2-check"></i></div>
+                <span>예약내용</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="top2">
+        <div class="top2_left" stlye="height:60px;background:red;">
+        <ul>
+            <div id="all_menu" class="menu" stlye="padding:200px;">
+                <span style="cursor:pointer;color:#00D7B9; display:flex; align-items:center; justify-content:center;"><div class="menu_logo" style="width: 22px; height: 22px; margin:0 10px;"><img src="./static/images/main/icon_menu_22.svg" alt="메뉴로고" width="24px" height="24px"></div>전체메뉴</span>
+                <div class="menu_carrier">
+                    <div class="all_menu_icon" style="margin-left:10px;"><img src="./static/images/main/전체메뉴_아이콘1.png" alt="all_menu_icon1"></div>
+                    <div class="all_menu_icon2" style="margin-left:20px;"><img src="./static/images/main/전체메뉴_아이콘2.png" alt="all_menu_icon2"></div>
+                    <div class="all_menu_detail" style="margin-left:30px;margin-top:20px;width:1140px;height:230px; background:rgb(138, 138, 138);display:flex;"></div>
+                </div>
+            </div>
+            <li class="menu"><a href="./null.html">해외여행</a></li>
+            <li class="menu"><a href="./InternalTravel.html">국내여행</a></li>
+            <li class="menu"><a href="./null.html">항공</a></li>
+            <li class="menu"><a href="./Hotel.html">호텔</a></li>
+            <li class="menu"><a href="./null.html">투어/패스</a></li>
+        </ul>
+        </div>
+
+ 
+
+        <div class="top2_right">
+            <ul>
+                <div><a href="./null.html"  style="text-decoration:none; font-family: 'Noto Sans KR', sans-serif;">기획전</a></div>
+                <div><a href="./null.html" style="text-decoration:none; font-family: 'Noto Sans KR', sans-serif;">이벤트</a></div>
+                <div><a href="./null.html" style="text-decoration:none; font-family: 'Noto Sans KR', sans-serif;">고객센터</a></div>
+            </ul>
+        </div>
+    
+</div>
+</header>
+    
+<main>
+    <div class="main1">
+        <div class="main1_container">
+        <div class="slideList">
+
+                <div class="list1">
+                <div class="sl_img">
+                    <div class="slide_img_바탕색" style="background-color:rgb(245, 68, 68);">
+                        <div class="slide_image_text">
+                            <div class="slide_image_text1">
+                            <div><p class="sit" style="color:rgb(255, 255, 255); font-size:30px;">2024 전세계 허니문</p></div>
+                            <div><p class="sit" style="color:rgb(0, 0, 0); font-size:30px;">슈퍼세일</p></div>
+                            </div>
+                            <div class="slide_image_text2" style="margin:30px 0;">
+                                <div><p style="font-weight:1000;color:rgb(255, 255, 255); font-size:18px;">#즉시할인최대20만원</p></div>
+                                <div><p style="font-weight:1000;color:rgb(255, 255, 255); font-size:18px;">#최대30만원 추가할인쿠폰</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_img_사진" style="background-image:url(./static/images/main/slied_image1.avif);"></div>
+                </div>
+                </div>
+
+                <div class="list2">
+                <div class="sl_img">
+                    <div class="slide_img_바탕색" style="background-color:rgb(45, 101, 255);">
+                        <div class="slide_image_text">
+                            <div class="slide_image_text1">
+                            <div><p class="sit" style="color:rgb(255, 255, 255); font-size:30px;">동남아여행</p></div>
+                            <div><p class="sit" style="color:rgb(255, 76, 70); font-size:30px;">얼리버드 할인특별</p></div>
+                            </div>
+                            <div class="slide_image_text2" style="margin:30px 0;">
+                                <div><p style="font-weight:1000;color:rgb(255, 76, 70); font-size:18px;">미리 준비할수록 할인이 더 커져요!</p></div>
+                                <div><p style="font-weight:1000;color:rgb(255, 255, 255); font-size:18px;">~1/31까지</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_img_사진" style="background-image:url(./static/images/main/slied_image2.avif);"></div>
+                </div>
+                </div>
+
+                <div class="list3">
+                <div class="sl_img">
+                    <div class="slide_img_바탕색" style="background-color:rgb(68, 155, 177);">
+                        <div class="slide_image_text">
+                            <div class="slide_image_text1">
+                            <div><p class="sit" style="color:rgb(0, 0, 0); font-size:30px;">다음엔 이런여행 어때요?</p></div>
+                            <div><p class="sit" style="color:rgb(0, 0, 0); font-size:30px;">시그니처는 언제나 기대이상</p></div>
+                            </div>
+                            <div class="slide_image_text2" style="margin:30px 0;">
+                                <div><p style="font-weight:1000;color:rgb(143, 23, 19); font-size:18px;">여행의 순간, 모두시그니처</p></div>
+                                <div><p style="font-weight:1000;color:rgb(0, 0, 0); font-size:18px;">DW투어 패키지여행 대표브랜드</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide_img_사진" style="background-image:url(./static/images/main/slied_image3.avif);"></div>
+                </div>
+                </div>
+
+                <div class="list4">
+                    <div class="sl_img">
+                        <div class="slide_img_바탕색" style="background-color:rgb(255, 251, 143);">
+                            <div class="slide_image_text">
+                                <div class="slide_image_text1">
+                                <div><p class="sit" style="color:rgb(101, 34, 146); font-size:30px;">유럽시즌ON</p></div>
+                                <div><p class="sit" style="color:rgb(0, 0, 0); font-size:30px;">무조건 출발확정!</p></div>
+                                </div>
+                                <div class="slide_image_text2" style="margin:30px 0;">
+                                    <div><p style="font-weight:1000;color:rgb(0, 0, 0); font-size:18px;">#서유럽 #동유럽 #북유럽 #지중해 #중동 #비즈니스까지</p></div>
+                                    <div><p style="font-weight:1000;color:rgb(0, 0, 0); font-size:18px;">BEST상품 최대혜택</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_img_사진" style="background-image:url(./static/images/main/slied_image4.avif);"></div>
+                    </div>
+                    </div>
+
+                <div class="list5">
+                    <div class="sl_img">
+                        <div class="slide_img_바탕색" style="background-color:rgb(70, 141, 49);">
+                            <div class="slide_image_text">
+                                <div class="slide_image_text1">
+                                <div><p class="sit" style="color:rgb(0, 0, 0); font-size:30px;">난이도별로 남여노소 누구나</p></div>
+                                <div><p class="sit" style="color:rgb(150, 41, 37); font-size:30px;">도전! 트래킹</p></div>
+                                </div>
+                                <div class="slide_image_text2" style="margin:30px 0;">
+                                    <div><p style="font-weight:1000;color:rgb(0, 0, 0); font-size:18px;">#백두산 #장가계 #서안 #구채구</p></div>
+                                    <div><p style="font-weight:1000;color:rgb(0, 0, 0); font-size:18px;">#태항산 #황산</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_img_사진" style="background-image:url(./static/images/main/slied_image5.avif);"></div>
+                    </div>
+                    </div>
+            
+            </div>
+
+            <div class="slide_bt">
+                <div class="slide_bt_left" style="cursor:pointer;"><i class="bi bi-arrow-left-circle-fill" style="color:rgb(0, 78, 0); font-size:30px;"></i></div>
+                <div class="slide_bt_right" style="margin-left:10px; cursor:pointer;"><i class="bi bi-arrow-right-circle-fill" style="color:rgb(0, 78, 0); font-size:30px;"></i></div>
+                <div style="margin-left:60px;"><p style="font-size:20px;" id="slide_page_num"></p></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main2">
+        <div class="main2_container">
+            <h1 style="position:absolute; top:0; left:0; font-family: 'seolleimcool-SemiBold';">DW의 추천상품</h1>
+            <div class="main2_item">
+                <img src="./static/images/main/main2_item1.avif" alt="main2_item1">
+                <div style="margin:0 10px; position:relative; height:200px;">
+                    <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >해외여행</p>
+                    <h1 style="font-size:20px; word-break:keep-all; margin:10px 0;">[부산출발]라오스/비엔티엔/방비엥 6일(4성호텔)</h1>
+                    <p style="font-size:15px; word-break:keep-all; color:gray;">#블루라군 #카야킹 #탐쌍탐남동굴 #시내관광 #야시장 #풍등</p>
+                    <div style="position:absolute; right:0; bottom:0; display:flex; align-items:center;"><p style="font-size:25px; margin-right:10px; font-weight:bold;">399,900</p><p>원~</p></div>
+                </div>
+            </div>
+            <div class="main2_item">
+                <img src="./static/images/main/main2_item2.avif" alt="main2_item1">
+                <div style="margin:0 10px; position:relative; height:200px;">
+                    <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >해외여행</p>
+                    <h1 style="font-size:20px; word-break:keep-all; margin:10px 0;">[부산출도착] 일본(니이가타/하코다테) 크루즈 6일[코스타크루즈]</h1>
+                    <p style="font-size:15px; word-break:keep-all; color:gray;">#지금만이가격! #최고의 효도여행 #추억의 친목여행</p>
+                    <div style="position:absolute; right:0; bottom:0; display:flex; align-items:center;"><p style="font-size:25px; margin-right:10px; font-weight:bold;">1,640,000</p><p>원~</p></div>
+                </div>
+            </div>
+            <div class="main2_item">
+                <img src="./static/images/main/main2_item3.avif" alt="main2_item1">
+                <div style="margin:0 10px; position:relative; height:200px;">
+                    <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >해외여행</p>
+                    <h1 style="font-size:20px; word-break:keep-all; margin:10px 0;">[역사투어] 대련+여순 핵심 3일 (노쇼핑/특식2회/월드체인호텔)</h1>
+                    <p style="font-size:15px; word-break:keep-all; color:gray;">#홈쇼핑히트상품 #대련_여순 #역사기행 #월드체인호텔 #노쇼핑 #특식2회</p>
+                    <div style="position:absolute; right:0; bottom:0; display:flex; align-items:center;"><p style="font-size:25px; margin-right:10px; font-weight:bold;">399,900</p><p>원~</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main5">
+        <div class="main5_container">
+            <h1 style="position:absolute; top:100px; left:0; font-family: 'seolleimcool-SemiBold';">우리나라 구석구석</h1>
+            <div class="main5_item" style="width:250px;">
+                <div class="main5_img_container"><img src="./static/images/main/main5_item1.jpg" alt="main5_item"></div>
+                <div class="main5_item_text">
+                    <p style="font-size:20px; margin:10px 0; font-family: 'JalnanGothic';">제주 설 연휴 특가!</p>
+                    <p style="font-size:14px; color:rgb(75, 75, 75);">고민하면 늦어요!</p>
+                    <p style="font-size:14px; color:rgb(75, 75, 75);">2024 설 연휴엔 제주로🍊</p>
+                </div>
+            </div>
+            <div class="main5_item" style="width:250px;">
+                <div class="main5_img_container"><img src="./static/images/main/main5_item2.jpg" alt="main5_item"></div>
+                <div class="main5_item_text">
+                    <p style="font-size:20px; margin:10px 0; font-family: 'JalnanGothic';">All about 하이원</p>
+                    <p style="font-size:14px; color:rgb(75, 75, 75);">하이원 숙박+스키패키지부터</p>
+                    <p style="font-size:14px; color:rgb(75, 75, 75);">렌탈&입장권까지⛷️</p>
+                </div>
+            </div>
+            <div class="main5_item_middle" style="width:300px;">
+                <div class="main5_middle_img_container"><img style="width:300px; height:300px;"src="./static/images/main/main5_item3.jpg" alt="main5_item"></div>
+                <div class="main5_item_text">
+                    <p style="font-size:25px; margin:10px 0; font-family: 'JalnanGothic';">1월의 국내여행</p>
+                    <p style="font-size:16px; color:rgb(75, 75, 75);">겨울 방학 여행❄️</p>
+                    <p style="font-size:16px; color:rgb(75, 75, 75);">#눈꽃축제#스키장#온수풀</p>
+                </div>
+            </div>
+            <div class="main5_item" style="width:250px;">
+                <div class="main5_img_container"><img src="./static/images/main/main5_item4.jpg" alt="main5_item"></div>
+                <div class="main5_item_text">
+                    <p style="font-size:20px; margin:10px 0; font-family: 'JalnanGothic';">이유 있는 선택, 내나라 여행</p>
+                    <p style="font-size:14px; color:rgb(75, 75, 75);">2007년 신작, 연간 1만명의</p>
+                    <p style="font-size:14px; color:rgb(75, 75, 75);">고객이 선택한 고품격 국내여행🏆</p>
+                </div>
+            </div>
+            <div class="main5_item" style="width:250px;">
+                <div class="main5_img_container"><img src="./static/images/main/main5_item5.jpg" alt="main5_item"></div>
+                <div class="main5_item_text">
+                    <p style="font-size:20px; margin:10px 0; font-family: 'JalnanGothic';">겨울 축제 여행!</p>
+                    <p style="font-size:14px; color:rgb(75, 75, 75);">피키지로 떠나는 겨울축제</p>
+                    <p style="font-size:14px; color:rgb(75, 75, 75);">출발 임박!모객 집중☃️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="main3_back" style="position:absolute; width:3000px; height:300px; animation:back 20s infinite; animation-direction:alternate"></div>
+        <div class="advertisement1" style="width:1400px; height:150px;background:#8d3ec5; display:flex; position:relative;cursor:pointer;">
+            <img src="./static/images/main/청룡.png" alt="청룡" style="width:100px; position:absolute; left:250px; top:20px;">
+            <div style = "position:absolute;width:600px; left:420px;margin-top:20px;">
+                <div style="display:flex; align-items:center;">
+                    <p style="color:white; font-family:iceJaram-Rg; font-size:50px; margin-right:50px;">새해맞이 이벤트!!</p>
+                    <img src="./static/images/main/광고.PNG" alt="광고아이콘" style="width:200px; height:50px;">
+                </div>
+                <div>
+                    <p style="color:white;font-size:20px;">sns에 공유하고 다양한 혜택을 챙겨보자</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main4">
+        <div class="main4_container">
+        <h1 style="position:absolute; top:0; left:0; font-family: 'seolleimcool-SemiBold';">여행 LIVE</h1>
+        <iframe width="250" height="400" src="https://www.youtube.com/embed/2m1BHaklsuY" title="유럽 패키지,괜찮을까? 모두투어 파리 패키지 솔직검증🍷" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="250" height="400" src="https://www.youtube.com/embed/54SBmMLLEVc" title="후쿠오카가면 꼭! 먹어야 할 푸딩 BEST7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="250" height="400" src="https://www.youtube.com/embed/qjNfqMIi68M" title="사막의 오아시스 #아부다비 웅장하고 화려해요 | #해외여행 #하나투어" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="inr">
+        <div class="service_info" style="display:flex; align-items:center; justify-content:center;">
+            <div style="width:1000px;">
+            <ul style="display:flex; justify-content:space-around;">
+                <li><a href="./null.html">회사소개</a></li>
+                <p> | </p>
+                <li><a href="./null.html" style="font-weight:bold;">개인정보처리방침</a></li>
+                <p> | </p>
+                <li><a href="./null.html">여행약관</a></li>
+                <p> | </p>
+                <li><a href="./null.html">이용약관</a></li>
+                <p> | </p>
+                <li><a href="./null.html">해외여행자보험</a></li>
+                <p> | </p>
+                <li><a href="./null.html">티켓판매안내</a></li>
+                <p> | </p>
+                <li><a href="./null.html">공지사항</a></li>
+                <p> | </p>
+                <li><a href="./null.html">고객센터</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="company_info">
+            <div style="margin-top:10px;">
+            <div class="c_info" style="display:flex; width:1000px; margin-top:10px;">
+                <p>(주)DW투어</p><p> | </p><p>대표 : 중앙로</p><p> | </p><p>주소 : 대전 중구 중앙로121번길 20 2,3 2층<p><p> | </p><p>관광사업자 등록번호 : 제1118-1151호</p><p> | </p><p>호스팅업체 : (주)DW투어네트워크</p>
+            </div>
+            
+            <div class="c_info" style="display:flex; width:1000px; margin-top:10px;">
+                <p>개인정보 보호 책임자 : 여행사</p><p> | </p><p>팩스02-000-0000</p><p> | </p><p>영업보증보험 : 22억 3천만원 가입<p> | <p>관광사업자 등록번호 : 제1118-1151호</p><p> | </p><p>호스팅업체 : (주)DW투어네트워크</p>
+            </div>
+            
+            <div style="">
+                <div class="c_info" style="width:1000px; margin-top:10px;">
+                    <p>부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.</p>
+                </div>
+                <div class="c_info" style="width:1000px; margin-top:10px;">
+                    <p>DW투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을 지지 않습니다.</p>
+                </div>
+            </div>
+            </div>            
+        </div>
+        
+    </div>
+    <div class="certification_mark"></div>
+</footer>
+<div id="overlay">
+    <div style="border-radius: 10px; display:flex; position:relative; border:5px solid white;">
+    <div id="popup" style="background-image:url(./static/images/main/광고배너.avif);"></div>
+    <div id="popup" style="background-image:url(./static/images/main/광고배너2.jpg);"></div>
+    <div id="popup" style="background-image:url(./static/images/main/광고배너3.jpg)"></div>
+    <span id="close-btn" onclick="closePopup()"style="border-radius:10%;background-color:white; width:30px; height:30px; display:flex;justify-content:center; align-items:center;"><i class="bi bi-x-square-fill" style="font-size:25px;color:#000000;margin-bottom:3px;"></i></span>
+    </div>
+</div>
+</body>
+</html>
