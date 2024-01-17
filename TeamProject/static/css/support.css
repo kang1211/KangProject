@@ -1,16 +1,35 @@
 
-main{width:100%; height:100%;display:flex; flex-wrap:wrap;justify-content:center;}
+main{width:100%; height:100%;display:flex;justify-content:center;}
 
-.main1{display:flex;justify-content:center;flex-wrap:wrap;width:1200px;
+.main_box{
+    display:flex;
+    width:1200px;
 }
-/* DW투어 고객센터입니다 무엇을 도와드릴까요?---------------------------- */
+
+
+
+
+/* side_chart1--------------------------------------------------------- */
+.side_chart1{
+    width:200px; height:100%;
+    margin-right:50px;
+    margin-top:100px;
+}
+
+/* main1--------------------------------------------------------------- */
+.main1{display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:700px;
+    margin-top:100px;
+}
+/* DW투어 고객센터입니다 무엇을 도와드릴까요? */
 .search_guide{
     width:100%;
     display:flex;
     justify-content:center;
-    margin-top:100px;
 }
-/* 검색창--------------------------------------------------------------- */
+/* 검색창 */
 .searchBar{
     width:500px;
     height:50px;
@@ -31,7 +50,6 @@ main{width:100%; height:100%;display:flex; flex-wrap:wrap;justify-content:center
     width:480px;
     height:100%;
     border:none;
-    /* border-right:1px solid black; */
     padding:0 10px;
     font-size:20px;
 }
@@ -50,18 +68,17 @@ main{width:100%; height:100%;display:flex; flex-wrap:wrap;justify-content:center
     color:black;
 }
 input:focus{outline:none;}
-/* 글상자---------------------------------------------------------------- */
+/* 글상자 */
 .board{
     width:600px;
     display:flex;
     justify-content:center;
-    margin:0 300px;
 }
 .board table{
     width:100%;
     color:black;
     border: none;
-    /* margin-bottom: 50px; */
+    border-collapse:collapse;
 }
 .board table th{
     border-bottom: 3px solid rgb(107, 107, 107);
@@ -69,9 +86,12 @@ input:focus{outline:none;}
 }
 .board table td{
     word-break:break-word;
-    height:35px;
     padding:10px 0;
     text-align:center;
+    cursor:pointer;
+}
+#board_index tr:hover{
+    background:orange;
 }
 .board table td:nth-child(2){
     text-align:left;
@@ -81,7 +101,7 @@ input:focus{outline:none;}
     overflow:hidden;
     text-overflow:ellipsis;
 }
-/* 글상자 페이지------------------------------------------------------------ */
+/* 글상자 페이지 */
 .board_page{
     width:100%;
     height:50px;
@@ -95,11 +115,17 @@ input:focus{outline:none;}
 .board_page button{
     margin: 0 10px;
     width:20px;
-    
 }
-/* 사이드 차트2------------------------------------------------------------ */
+.page_bt{
+    all:unset;
+    cursor:pointer;
+}
+/* side_chart2------------------------------------------------------------ */
 .side_chart2{
-    position:absolute; background:rgb(255, 255, 255); width:210px; height:400px;right:350px;top:300px;
+    background:rgb(255, 255, 255);
+    width:200px; height:400px;
+    margin-left:50px;
+    margin-top:300px;
 }
 .side_chart2_index{
     font-size:20px; display:flex;width:100%;justify-content:center; align-items:center;flex-wrap:wrap;padding:10px 0; background-color:rgb(233, 233, 233); margin-bottom:2px;border-radius:5%;
