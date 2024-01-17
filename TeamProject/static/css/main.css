@@ -1,11 +1,9 @@
 /*중단------------------------------------------------------------------------------------*/
-@font-face {
-    font-family: 'seolleimcool-SemiBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+main{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
 }
-
 /*main1-----------------------------------*/
 .main1{
     height:100%;
@@ -69,7 +67,7 @@
     /* background:pink; */
 }
 .main2_container{
-    width:1200px;
+    width:1400px;
     height:630px;
     margin:auto;
     display:flex;
@@ -92,7 +90,7 @@
 }
 /*main3-----------------------------------*/
 .main3{
-    width:100%;
+    width:1920px;
     height:500px;
     display:flex;
     align-items:center;
@@ -113,16 +111,27 @@
     justify-content:center;
 } 
 .main4_container{
-    width:1200px;
+    width:1400px;
     height:600px;
     margin:auto;
     display:flex;
     justify-content:center;
     align-items:center;
     position:relative;
+    
+}
+.shorts{
+    background-image:url(../images/main/main4_bg.jpg);
+    background-size:contain;
+    padding-top:50px;
+    opacity:80%;
+    z-index:-1;
+    position:absolute;
+    width:100%;
+    height:80%;
 }
 .main4 iframe{
-margin:0 50px;
+margin:0 100px;
 border-radius:20%;
 }
 /*main5-----------------------------------*/
@@ -134,7 +143,7 @@ border-radius:20%;
     justify-content:center;
 }
 .main5_container{
-    width:1200px;
+    width:1400px;
     height:100%;
     display:flex;
     justify-content:center;
@@ -142,7 +151,8 @@ border-radius:20%;
     position:relative;
 }
 .main5_container div img{
-    border-radius:100%;  
+    border-radius:100%;
+    cursor:pointer;
 }
 .main5_item, .main5_item_middle{
     margin:0 15px;
