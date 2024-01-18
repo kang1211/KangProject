@@ -108,20 +108,33 @@
             <div id="all_menu" class="menu" style="height:70px; display:flex;align-items:center;">
                 <span style="cursor:pointer;color:#00D7B9;display:flex; align-items:center; justify-content:center;"><div class="menu_logo" style="width: 22px; height: 22px; margin:0 10px;"><img src="./static/images/main/icon_menu_22.svg" alt="메뉴로고" width="24px" height="24px"></div>전체메뉴</span>
                 <div class="menu_carrier">
-                    <div class="all_menu_icon" style="margin-left:20px; display:flex; justify-content:space-between; width:500px;">
-                        <img src="./static/images/main/전체메뉴_아이콘1.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/전체메뉴_아이콘2.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/전체메뉴_아이콘3.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/전체메뉴_아이콘4.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/전체메뉴_아이콘5.png" alt="all_menu_icon1">
+                    <div class="all_menu_icon" style="margin-left:20px; display:flex; width:100%;">
+                        <div><img src="./static/images/main/해외여행.png" alt="all_menu_icon1"></div>
+                        <div><img src="./static/images/main/국내여행.png" alt="all_menu_icon1"></div>
+                        <div><img src="./static/images/main/항공.png" alt="all_menu_icon1"></div>
+                        <div><img src="./static/images/main/호텔.png" alt="all_menu_icon1"></div>
+                        <div><img src="./static/images/main/투어.png" alt="all_menu_icon1"></div>
                     </div>
-                    <div class="all_menu_icon2" style="margin-left:20px;display:flex; justify-content:space-between; width:700px;">
-                        <img src="./static/images/main/전체메뉴_아이콘-2-1.png" alt="all_menu_icon2">
-                        <img src="./static/images/main/전체메뉴_아이콘-2-2.png" alt="all_menu_icon2">
-                        <img src="./static/images/main/전체메뉴_아이콘-2-3.png" alt="all_menu_icon2">
-                        <img src="./static/images/main/전체메뉴_아이콘-2-4.png" alt="all_menu_icon2">
+                    <div class="all_menu_icon2" style="margin-left:20px;display:flex; width:100%;">
+                        <div><img src="./static/images/main/전체메뉴_아이콘-2-1.png" alt="all_menu_icon2"></div>
+                        <div><img src="./static/images/main/전체메뉴_아이콘-2-2.png" alt="all_menu_icon2"></div>
+                        <div><img src="./static/images/main/전체메뉴_아이콘-2-3.png" alt="all_menu_icon2"></div>
+                        <div><img src="./static/images/main/전체메뉴_아이콘-2-4.png" alt="all_menu_icon2"></div>
                     </div>
-                    <div class="all_menu_detail" style="margin-left:30px;margin-top:10px;width:1140px;height:200px; background:rgb(138, 138, 138);display:flex;"></div>
+                    <div class="all_menu_detail" style="margin-top:10px;width:100%; height:200px;display:flex;">
+                        <div class="all_menu_detail_box">
+                            <p>특급 타임딜</p>
+                            <p>기획전</p>
+                        </div>
+                        <div class="all_menu_detail_box">
+                            <p>기업/법인 여행문의</p>
+                            <p>DW LIVE</p>
+                        </div>
+                        <div class="all_menu_detail_box">
+                            <p>차량/골프 서비스</p>
+                            <p>이벤트</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <li class="menu"><a href="./null.html">해외여행</a></li>
@@ -132,7 +145,7 @@
         </ul>
         </div>
 
- 
+    
 
         <div class="top2_right">
             <ul>
@@ -242,8 +255,8 @@
             </div>
 
             <div class="slide_bt">
-                <div class="slide_bt_left" style="cursor:pointer;"><i class="bi bi-arrow-left-circle-fill" style="color:rgb(0, 78, 0); font-size:30px;"></i></div>
-                <div class="slide_bt_right" style="margin-left:10px; cursor:pointer;"><i class="bi bi-arrow-right-circle-fill" style="color:rgb(0, 78, 0); font-size:30px;"></i></div>
+                <div class="slide_bt_left" style="cursor:pointer;"><i class="bi bi-arrow-left-circle-fill" style="color:#00D7B9; font-size:30px;"></i></div>
+                <div class="slide_bt_right" style="margin-left:10px; cursor:pointer;"><i class="bi bi-arrow-right-circle-fill" style="color:#00D7B9; font-size:30px;"></i></div>
                 <div style="margin-left:60px;"><p style="font-size:20px;" id="slide_page_num"></p></div>
             </div>
         </div>
@@ -403,11 +416,11 @@
 </footer>
 
 <div id="overlay">
-    <div style="border-radius: 10px; display:flex; position:relative; border:5px solid white;">
-    <div id="popup" style="background-image:url(./static/images/main/광고배너1.jpeg);"></div>
-    <div id="popup" style="background-image:url(./static/images/main/광고배너2.jpg);"></div>
-    <div id="popup" style="background-image:url(./static/images/main/광고배너3.jpg)"></div>
-    <span id="close-btn" onclick="closePopup()"style="border-radius:10%;background-color:white; width:30px; height:30px; display:flex;justify-content:center; align-items:center;"><i class="bi bi-x-square-fill" style="font-size:25px;color:#000000;margin-bottom:3px;"></i></span>
+    <div style="border-radius: 10px; display:flex; position:relative; border:5px solid white; transition: background-color 0.3s ease">
+        <div id="popup" style="background-image:url(./static/images/main/광고배너1.jpeg);"></div>
+        <div id="popup" style="background-image:url(./static/images/main/광고배너2.jpg);"></div>
+        <div id="popup" style="background-image:url(./static/images/main/광고배너3.jpg)"></div>
+        <span id="close-btn" onclick="closePopup()"style="border-radius:10%;background-color:white; width:30px; height:30px; display:flex;justify-content:center; align-items:center;"><i class="bi bi-x-square-fill" style="font-size:25px;color:#000000;margin-bottom:3px;"></i></span>
     </div>
 </div>
 

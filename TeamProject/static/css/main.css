@@ -208,4 +208,8 @@ border-radius:20%;
     position:absolute;
     right:15px;
     top:10px;
+    display:inline-block;
+  }
+  #close-btn:hover{
+    background-color:#66C5FF !important;
   }

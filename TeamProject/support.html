@@ -68,10 +68,33 @@
                 <div><i class="bi bi-ticket-perforated"></i></div>
                 <span>웰컴쿠폰</span>
             </div>
-            <div class="top_icon">
+            <div class="top_icon login_icon">
                 <div><i class="bi bi-person"></i></div>
                 <span>로그인</span>
             </div>
+<!-- 로그인 박스--------------------------------------------------- -->
+            <div class="login_box" style="position:absolute; background:rgb(255, 255, 255); width:300px; height:320px;z-index:2;top:60px;right:12px; display:none;">
+                <div style="text-align:center; padding:10px 0;"><img src="./static/images/main/DW투어.PNG" alt="메인아이콘" style="width:150px; height:40px;"></div>
+                <div style="font-family:'SejonghospitalBold'; text-align:center; font-size:20px;">로그인</div>
+                <div style="width:100%; border-top:1px solid gray; border-bottom:1px solid gray; margin:10px 0;">
+                    <div style="width:100%;height:50px; display:flex; justify-content:center;padding:10px;">
+                        <input type="text" name="login_idpw" id="login_idpw" placeholder="아이디를 입력하세요">
+                    </div>
+                    <div style="width:100%;height:50px; display:flex; justify-content:center;padding:10px;">
+                        <input type="text" name="login_idpw" id="login_idpw" placeholder="비밀번호를 입력하세요">
+                    </div>
+                    <div style="display:flex; justify-content:space-between;padding:0 10px; font-size:12px;">
+                        <div>
+                            <input type="checkbox" id="login_auto" name="login_auto">
+                            <label for="login_auto">자동로그인</label>
+                        </div>
+                        <div><a href="null.html" style="text-decoration:none; color:blue;">아이디·비밀번호 찾기</a></div>
+                    </div>
+                    <div class="login_id_bt" style="cursor:pointer; width:90%; background:rgb(74, 116, 194); color:white; border-radius:10px;margin:20px auto; text-align:center;">로그인</div>
+                </div>
+                <div class="login_pw_bt" style="cursor:pointer; width:90%; background:rgb(255, 255, 255); color:rgb(77, 77, 77); border-radius:10px;margin:10px auto; text-align:center; border:1px solid gray;">회원가입</div>
+            </div>
+<!-- ------------------------------------------------------------- -->
             <div class="top_icon">
                 <div><i class="bi bi-calendar2-check"></i></div>
                 <span>예약내용</span>
@@ -86,11 +109,11 @@
                 <span style="cursor:pointer;color:#00D7B9;display:flex; align-items:center; justify-content:center;"><div class="menu_logo" style="width: 22px; height: 22px; margin:0 10px;"><img src="./static/images/main/icon_menu_22.svg" alt="메뉴로고" width="24px" height="24px"></div>전체메뉴</span>
                 <div class="menu_carrier">
                     <div class="all_menu_icon" style="margin-left:20px; display:flex; justify-content:space-between; width:500px;">
-                        <img src="./static/images/main/전체메뉴_아이콘1.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/전체메뉴_아이콘2.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/전체메뉴_아이콘3.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/전체메뉴_아이콘4.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/전체메뉴_아이콘5.png" alt="all_menu_icon1">
+                        <img src="./static/images/main/해외여행.png" alt="all_menu_icon1">
+                        <img src="./static/images/main/국내여행.png" alt="all_menu_icon1">
+                        <img src="./static/images/main/항공.png" alt="all_menu_icon1">
+                        <img src="./static/images/main/호텔.png" alt="all_menu_icon1">
+                        <img src="./static/images/main/투어.png" alt="all_menu_icon1">
                     </div>
                     <div class="all_menu_icon2" style="margin-left:20px;display:flex; justify-content:space-between; width:700px;">
                         <img src="./static/images/main/전체메뉴_아이콘-2-1.png" alt="all_menu_icon2">

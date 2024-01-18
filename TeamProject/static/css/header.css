@@ -165,14 +165,41 @@ header{
     cursor:pointer;
 }
 
-.all_menu_icon img{
-    height:100px;
-    margin-top:25px;
-    margin-bottom:50px;
+.all_menu_icon img, .all_menu_icon2 img{
+    height:70px;
+    width:70px;
+}
+.all_menu_icon div, .all_menu_icon2 div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:110px;height:110px;
+    margin-top:20px;
+    border-radius:100%;
+    margin-left:20px;
+}
+.all_menu_icon div:hover, .all_menu_icon2 div:hover{
+    border:3px solid #66C5FF;
 }
 
 #all_menu:hover .menu_carrier, .menu_carrier:hover{
     display:block;
+}
+.all_menu_detail_box{
+    width:200px; height:200px;
+    margin-left:60px;
+    text-align:center;
+}
+.all_menu_detail_box p{
+    margin-bottom:50px;
+    margin-top:20px;
+    border-bottom:2px solid #66C5FF;
+    color:#66C5FF;
+    cursor:pointer;
+}
+.all_menu_detail_box p:hover{
+    background:#66C5FF;
+    color:white; 
 }
 .menu{
     list-style-type:none;
