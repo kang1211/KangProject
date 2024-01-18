@@ -1,21 +1,31 @@
 $(function(){
-    
-    $(".search_btn").on("click",function(){
-        if($("#search").val()==0){
-            alert("내용을 입력하세요")
+// 검색창
+$(document).on('click',function(e){
+if(!$(e.target).closest('.header_search').length){
+    $(".ant-input-affix").css("border-color","#f5f6f6");
+}
+});
+
+$(".header_search").click(function(){
+$(".ant-input-affix").css("border","2px solid #00D7B9");
+});
+//고객센터 검색창-------------------------------------------------
+$(".search_btn").on("click",function(){
+    if($("#search").val()==0){
+        alert("내용을 입력하세요")
+    }
+});
+
+$("#search").on("keyup",function(){
+
+    var word = $(this).val();
+
+    $("#board_index>tr").filter(
+        function(){
+            $(this).toggle($(this).text().includes(word));
         }
-    });
-
-    $("#search").on("keyup",function(){
-    
-        var word = $(this).val();
-
-        $("#board_index>tr").filter(
-            function(){
-                $(this).toggle($(this).text().includes(word));
-            }
-        );
-    })
+    );
+})
 //처음 페이지 켰을때 게시판-------------------------------------------------------------
     let tableData = [
         ["Q1", "★여행계약서 확인 및 동의 방법★", "2023/12/13"],
