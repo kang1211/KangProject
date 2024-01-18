@@ -81,7 +81,7 @@
                         <input type="text" name="login_idpw" id="login_idpw" placeholder="아이디를 입력하세요">
                     </div>
                     <div style="width:100%;height:50px; display:flex; justify-content:center;padding:10px;">
-                        <input type="text" name="login_idpw" id="login_idpw" placeholder="비밀번호를 입력하세요">
+                        <input type="password" name="login_idpw" id="login_idpw" placeholder="비밀번호를 입력하세요">
                     </div>
                     <div style="display:flex; justify-content:space-between;padding:0 10px; font-size:12px;">
                         <div>
@@ -108,20 +108,33 @@
             <div id="all_menu" class="menu" style="height:70px; display:flex;align-items:center;">
                 <span style="cursor:pointer;color:#00D7B9;display:flex; align-items:center; justify-content:center;"><div class="menu_logo" style="width: 22px; height: 22px; margin:0 10px;"><img src="./static/images/main/icon_menu_22.svg" alt="메뉴로고" width="24px" height="24px"></div>전체메뉴</span>
                 <div class="menu_carrier">
-                    <div class="all_menu_icon" style="margin-left:20px; display:flex; justify-content:space-between; width:500px;">
-                        <img src="./static/images/main/해외여행.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/국내여행.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/항공.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/호텔.png" alt="all_menu_icon1">
-                        <img src="./static/images/main/투어.png" alt="all_menu_icon1">
+                    <div class="all_menu_icon" style="margin-left:20px; display:flex; width:100%;">
+                        <div><img src="./static/images/main/해외여행.png" alt="all_menu_icon1"></div>
+                        <div><img src="./static/images/main/국내여행.png" alt="all_menu_icon1"></div>
+                        <div><img src="./static/images/main/항공.png" alt="all_menu_icon1"></div>
+                        <div><img src="./static/images/main/호텔.png" alt="all_menu_icon1"></div>
+                        <div><img src="./static/images/main/투어.png" alt="all_menu_icon1"></div>
                     </div>
-                    <div class="all_menu_icon2" style="margin-left:20px;display:flex; justify-content:space-between; width:700px;">
-                        <img src="./static/images/main/전체메뉴_아이콘-2-1.png" alt="all_menu_icon2">
-                        <img src="./static/images/main/전체메뉴_아이콘-2-2.png" alt="all_menu_icon2">
-                        <img src="./static/images/main/전체메뉴_아이콘-2-3.png" alt="all_menu_icon2">
-                        <img src="./static/images/main/전체메뉴_아이콘-2-4.png" alt="all_menu_icon2">
+                    <div class="all_menu_icon2" style="margin-left:20px;display:flex; width:100%;">
+                        <div><img src="./static/images/main/전체메뉴_아이콘-2-1.png" alt="all_menu_icon2"></div>
+                        <div><img src="./static/images/main/전체메뉴_아이콘-2-2.png" alt="all_menu_icon2"></div>
+                        <div><img src="./static/images/main/전체메뉴_아이콘-2-3.png" alt="all_menu_icon2"></div>
+                        <div><img src="./static/images/main/전체메뉴_아이콘-2-4.png" alt="all_menu_icon2"></div>
                     </div>
-                    <div class="all_menu_detail" style="margin-left:30px;margin-top:10px;width:1140px;height:200px; background:rgb(138, 138, 138);display:flex;"></div>
+                    <div class="all_menu_detail" style="margin-top:10px;width:100%; height:200px;display:flex;">
+                        <div class="all_menu_detail_box">
+                            <p>특급 타임딜</p>
+                            <p>기획전</p>
+                        </div>
+                        <div class="all_menu_detail_box">
+                            <p>기업/법인 여행문의</p>
+                            <p>DW LIVE</p>
+                        </div>
+                        <div class="all_menu_detail_box">
+                            <p>차량/골프 서비스</p>
+                            <p>이벤트</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <li class="menu"><a href="./null.html">해외여행</a></li>
