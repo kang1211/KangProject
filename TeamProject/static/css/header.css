@@ -115,12 +115,22 @@ header{
     display:flex;
     align-items:center;
     width:220px;
+    position:relative;
 }
 .top_icon{
     cursor:pointer;
     margin: 0 10px;
     text-align:center;
 }
+/* 로그인박스 */
+#login_idpw{
+    width:80%;
+    border:1px solid black;
+}
+#login_idpw::placeholder{
+ text-align:center;
+}
+
 .top_icon div i{
     font-size:25px;
 }

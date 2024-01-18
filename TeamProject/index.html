@@ -68,10 +68,33 @@
                 <div><i class="bi bi-ticket-perforated"></i></div>
                 <span>웰컴쿠폰</span>
             </div>
-            <div class="top_icon">
+            <div class="top_icon login_icon">
                 <div><i class="bi bi-person"></i></div>
                 <span>로그인</span>
             </div>
+<!-- 로그인 박스--------------------------------------------------- -->
+            <div class="login_box" style="position:absolute; background:rgb(255, 255, 255); width:300px; height:320px;z-index:2;top:60px;right:12px; display:none;">
+                <div style="text-align:center; padding:10px 0;"><img src="./static/images/main/DW투어.PNG" alt="메인아이콘" style="width:150px; height:40px;"></div>
+                <div style="font-family:'SejonghospitalBold'; text-align:center; font-size:20px;">로그인</div>
+                <div style="width:100%; border-top:1px solid gray; border-bottom:1px solid gray; margin:10px 0;">
+                    <div style="width:100%;height:50px; display:flex; justify-content:center;padding:10px;">
+                        <input type="text" name="login_idpw" id="login_idpw" placeholder="아이디를 입력하세요">
+                    </div>
+                    <div style="width:100%;height:50px; display:flex; justify-content:center;padding:10px;">
+                        <input type="text" name="login_idpw" id="login_idpw" placeholder="비밀번호를 입력하세요">
+                    </div>
+                    <div style="display:flex; justify-content:space-between;padding:0 10px; font-size:12px;">
+                        <div>
+                            <input type="checkbox" id="login_auto" name="login_auto">
+                            <label for="login_auto">자동로그인</label>
+                        </div>
+                        <div><a href="null.html" style="text-decoration:none; color:blue;">아이디·비밀번호 찾기</a></div>
+                    </div>
+                    <div class="login_id_bt" style="cursor:pointer; width:90%; background:rgb(74, 116, 194); color:white; border-radius:10px;margin:20px auto; text-align:center;">로그인</div>
+                </div>
+                <div class="login_pw_bt" style="cursor:pointer; width:90%; background:rgb(255, 255, 255); color:rgb(77, 77, 77); border-radius:10px;margin:10px auto; text-align:center; border:1px solid gray;">회원가입</div>
+            </div>
+<!-- ------------------------------------------------------------- -->
             <div class="top_icon">
                 <div><i class="bi bi-calendar2-check"></i></div>
                 <span>예약내용</span>
@@ -230,7 +253,7 @@
         <div class="main2_container">
             <h1 style="position:absolute; top:0; left:0; font-family: 'seolleimcool-SemiBold';">DW의 추천상품</h1>
             <div class="main2_item">
-                <img src="./static/images/main/main2_item1.avif" alt="main2_item1">
+                <img src="./static/images/main/main2_item1.jpeg" alt="main2_item1">
                 <div style="margin:0 10px; position:relative; height:200px;">
                     <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >해외여행</p>
                     <h1 style="font-size:20px; word-break:keep-all; margin:10px 0;">[부산출발]라오스/비엔티엔/방비엥 6일(4성호텔)</h1>
@@ -239,7 +262,7 @@
                 </div>
             </div>
             <div class="main2_item">
-                <img src="./static/images/main/main2_item2.avif" alt="main2_item1">
+                <img src="./static/images/main/main2_item2.jpeg" alt="main2_item1">
                 <div style="margin:0 10px; position:relative; height:200px;">
                     <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >해외여행</p>
                     <h1 style="font-size:20px; word-break:keep-all; margin:10px 0;">[부산출도착] 일본(니이가타/하코다테) 크루즈 6일[코스타크루즈]</h1>
@@ -248,7 +271,7 @@
                 </div>
             </div>
             <div class="main2_item">
-                <img src="./static/images/main/main2_item3.avif" alt="main2_item1">
+                <img src="./static/images/main/main2_item3.jpeg" alt="main2_item1">
                 <div style="margin:0 10px; position:relative; height:200px;">
                     <p style="color:#00D7B9;font-weight:bold; margin:10px 0;" >해외여행</p>
                     <h1 style="font-size:20px; word-break:keep-all; margin:10px 0;">[역사투어] 대련+여순 핵심 3일 (노쇼핑/특식2회/월드체인호텔)</h1>
@@ -364,7 +387,7 @@
                 <p>개인정보 보호 책임자 : 여행사</p><p> | </p><p>팩스02-000-0000</p><p> | </p><p>영업보증보험 : 22억 3천만원 가입<p> | <p>관광사업자 등록번호 : 제1118-1151호</p><p> | </p><p>호스팅업체 : (주)DW투어네트워크</p>
             </div>
             
-            <div style="">
+            <div>
                 <div class="c_info" style="width:1000px; margin-top:10px;">
                     <p>부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.</p>
                 </div>
@@ -381,7 +404,7 @@
 
 <div id="overlay">
     <div style="border-radius: 10px; display:flex; position:relative; border:5px solid white;">
-    <div id="popup" style="background-image:url(./static/images/main/광고배너.avif);"></div>
+    <div id="popup" style="background-image:url(./static/images/main/광고배너1.jpeg);"></div>
     <div id="popup" style="background-image:url(./static/images/main/광고배너2.jpg);"></div>
     <div id="popup" style="background-image:url(./static/images/main/광고배너3.jpg)"></div>
     <span id="close-btn" onclick="closePopup()"style="border-radius:10%;background-color:white; width:30px; height:30px; display:flex;justify-content:center; align-items:center;"><i class="bi bi-x-square-fill" style="font-size:25px;color:#000000;margin-bottom:3px;"></i></span>
