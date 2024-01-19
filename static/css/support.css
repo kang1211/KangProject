@@ -97,6 +97,9 @@ input:focus{outline:none;}
 #board_index tr:hover{
     background:rgb(214, 214, 214);
 }
+#board_index td{
+    height:30px;
+}
 .board table td:nth-child(2){
     text-align:left;
     display:-webkit-box;
