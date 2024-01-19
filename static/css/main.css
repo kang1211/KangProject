@@ -97,6 +97,7 @@ main{
     justify-content:center;
     position:relative;
     overflow:hidden;
+    transition:linear;
 }
 @keyframes back{
     0%{transform:translateX(-1000px);background-image:url(../images/main/광고배경.jpg);background-size:contain;background-position:center;}
