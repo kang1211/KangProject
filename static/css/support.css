@@ -105,6 +105,13 @@ input:focus{outline:none;}
     overflow:hidden;
     text-overflow:ellipsis;
 }
+#board_index tr{
+    height:60px;
+    box-sizing:border-box;
+}
+#board_index td{
+    height:42px;
+}
 /* 글상자 페이지 */
 .board_page{
     width:100%;
