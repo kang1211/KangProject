@@ -95,7 +95,7 @@ input:focus{outline:none;}
     cursor:pointer;
 }
 #board_index tr:hover{
-    background:orange;
+    background:rgb(214, 214, 214);
 }
 .board table td:nth-child(2){
     text-align:left;
